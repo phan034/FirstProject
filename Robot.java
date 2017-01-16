@@ -43,10 +43,10 @@ public class Robot extends SampleRobot {
 		case customAuto:
 			if (range < 24.0) {
 				myRobot.drive(0.0, 0.0);
-				Timer.delay(0.1);
+				Timer.delay(0.2);
 				myRobot.drive(0.25, 0.0);
-				Timer.delay(0.5);
-				myRobot.drive(-0.5, -1.0);
+				Timer.delay(0.7);
+				myRobot.drive(-0.25, -1.0);
 				Timer.delay(0.3);
 				myRobot.drive(0.5, 0.0);
 			}
@@ -61,10 +61,10 @@ public class Robot extends SampleRobot {
 			myRobot.drive(-0.5, 0);
 			while (range < 24.0) {
 				myRobot.drive(0.0, 0.0);
-				Timer.delay(0.1);
+				Timer.delay(0.2);
 				myRobot.drive(0.25, 0.0);
-				Timer.delay(0.5);
-				myRobot.drive(-0.5, -1.0);
+				Timer.delay(0.7);
+				myRobot.drive(-0.25, -1.0);
 				Timer.delay(0.3);
 				myRobot.drive(-0.5, 0.0);
 			}
@@ -81,6 +81,7 @@ public class Robot extends SampleRobot {
 			Timer.delay(0.005); // wait for a motor update time
 		}
 	}
+
 
 	/**
 	 * Runs during test mode
